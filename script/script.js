@@ -17,9 +17,10 @@ let colors = ['#1abc9c', '#2ecc71', '#9b59b6', '#3498db', '#34495e', '#f1c40f', 
 
 let i = 0;
 document.getElementById('theme-btn').addEventListener('click', function(){
-        document.body.style.background = colors[i];
+        document.body.style.backgroundColor = colors[i];
         i++;
         if(i >= colors.length){
             i = 0;
         }
 })
+

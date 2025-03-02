@@ -33,7 +33,9 @@
     </style>
   </head>
   <body class="font-poppins w-auto mx-auto pt-6 pb-6 bg-[#e2e8f0]">
-    <header class="flex justify-between py-6 mx-36 bg-white p-6 rounded-2xl">
+    <!-- github repo link -- https://github.com/MMunim90/A5-Dev-Board -->
+
+    <header class="flex justify-between py-6 mx-36 bg-white p-6 rounded-2xl w-[1610px]">
       <div class="flex gap-3 items-center">
         <img src="assets/logo.png" alt="DevBoard logo" />
         <h1 class="text-4xl">Dev<b>Board</b></h1>
@@ -61,14 +63,12 @@
               <h2 class="font-bold text-4xl">06</h2>
             </div>
           </div>
-          <a
-            href="blogs.html"
+          <a href="blogs.html"
             class="flex gap-6 items-center bg-gradient-to-r from-[#2542f8] to-[#a1adfa] py-6 pl-10 pr-24 rounded-xl"
           >
             <img src="assets/board.png" alt="" />
-            <p class="font-medium text-2xl">
-              Discover Something <br />
-              New Today!
+            <p class="font-medium text-2xl text-white">
+              Discover Something New Today!
             </p>
           </a>
           <div class="flex gap-4 items-center bg-[#e2e8f0] p-8 rounded-xl">
@@ -84,7 +84,7 @@
           <div class="bg-slate-200 w-[342px] h-[317px] p-6 rounded-lg">
             <div class="flex flex-col gap-4">
               <p class="text-base bg-white p-3 rounded-lg w-32">Shop Ease</p>
-              <h2 class="font-medium text-2xl">Fix Mobile Button Issue</h2>
+              <h2 id="box1" class="font-medium text-2xl">Fix Mobile Button Issue</h2>
               <p class="text-sm opacity-50 mb-3 bg-white rounded-lg p-3">
                 Debug using Chrome <br />
                 DevTools, check for overlapping <br />
@@ -97,7 +97,7 @@
                 <p>Deadline</p>
                 <h4><b>21 March 2025</b></h4>
               </div>
-              <button
+              <button id="box1-btn" onclick="alert('Board updated Successfully')"
                 class="text-white bg-[#2542f8] font-medium text-base py-3 px-5 rounded-lg cursor-pointer"
               >
                 Completed
@@ -108,7 +108,7 @@
           <div class="bg-slate-200 w-[342px] h-[317px] p-6 rounded-lg">
             <div class="flex flex-col gap-4">
               <p class="text-base bg-white p-3 rounded-lg w-32">Cloud Sync</p>
-              <h2 class="font-medium text-2xl">Add Dark Mode</h2>
+              <h2 id="box2" class="font-medium text-2xl">Add Dark Mode</h2>
               <p class="text-sm opacity-50 mb-3 bg-white rounded-lg p-3">
                 Store the user's preference in <br />
                 localStorage, update CSS varia<br />bles dynamically, and apply
@@ -121,8 +121,7 @@
                 <p>Deadline</p>
                 <h4><b>21 March 2025</b></h4>
               </div>
-              <button
-                class="text-white bg-[#2542f8] font-medium text-base py-3 px-5 rounded-lg cursor-pointer"
+              <button id="box2-btn" onclick="alert('Board updated Successfully')" class="text-white bg-[#2542f8] font-medium text-base py-3 px-5 rounded-lg cursor-pointer"
               >
                 Completed
               </button>
@@ -132,7 +131,7 @@
           <div class="bg-slate-200 w-[342px] h-[317px] p-6 rounded-lg">
             <div class="flex flex-col gap-4">
               <p class="text-base bg-white p-3 rounded-lg w-28">SwiftPay</p>
-              <h2 class="font-medium text-2xl">Optimize Home page </h2>
+              <h2 id="box3" class="font-medium text-2xl">Optimize Home page </h2>
               <p class="text-sm opacity-50 mb-3 bg-white rounded-lg p-3">
                 Debug using Chrome <br />
                 DevTools, check for overlappin<br />g elements, and ensure
@@ -145,7 +144,7 @@
                 <p>Deadline</p>
                 <h4><b>21 March 2025</b></h4>
               </div>
-              <button
+              <button id="box3-btn" onclick="alert('Board updated Successfully')" 
                 class="text-white bg-[#2542f8] font-medium text-base py-3 px-5 rounded-lg cursor-pointer"
               >
                 Completed
@@ -156,7 +155,7 @@
           <div class="bg-slate-200 w-[342px] h-[317px] p-6 rounded-lg">
             <div class="flex flex-col gap-4">
               <p class="text-base bg-white p-3 rounded-lg w-20">Meta</p>
-              <h2 class="font-medium text-2xl">Add new emoji 🤲</h2>
+              <h2 id="box4" class="font-medium text-2xl">Add new emoji 🤲</h2>
               <p class="text-sm opacity-50 mb-3 bg-white rounded-lg p-3">
                 Debug using Chrome <br />
                 DevTools, check for overlappin<br />g elements, and ensure
@@ -169,7 +168,7 @@
                 <p>Deadline</p>
                 <h4><b>21 March 2025</b></h4>
               </div>
-              <button
+              <button id="box4-btn" onclick="alert('Board updated Successfully')" 
                 class="text-white bg-[#2542f8] font-medium text-base py-3 px-5 rounded-lg cursor-pointer"
               >
                 Completed
@@ -180,7 +179,7 @@
           <div class="bg-slate-200 w-[342px] h-[317px] p-6 rounded-lg">
             <div class="flex flex-col gap-4">
               <p class="text-base bg-white p-3 rounded-lg w-32">Google LLC</p>
-              <h2 class="font-medium text-2xl">Integrate OpenAI API</h2>
+              <h2 id="box5" class="font-medium text-2xl">Integrate OpenAI API</h2>
               <p class="text-sm opacity-50 mb-3 bg-white rounded-lg p-3">
                 Debug using Chrome <br />
                 DevTools, check for overlapping <br />
@@ -193,7 +192,7 @@
                 <p>Deadline</p>
                 <h4><b>21 March 2025</b></h4>
               </div>
-              <button
+              <button id="box5-btn" onclick="alert('Board updated Successfully')" 
                 class="text-white bg-[#2542f8] font-medium text-base py-3 px-5 rounded-lg cursor-pointer"
               >
                 Completed
@@ -204,7 +203,7 @@
           <div class="bg-slate-200 w-[342px] h-[317px] p-6 rounded-lg">
             <div class="flex flex-col gap-4">
               <p class="text-base bg-white p-3 rounded-lg w-28">Glassdoar</p>
-              <h2 class="font-medium text-2xl">Improve Job searching</h2>
+              <h2 id="box6" class="font-medium text-2xl">Improve Job searching</h2>
               <p class="text-sm opacity-50 mb-3 bg-white rounded-lg p-3">
                 Debug using Chrome <br />
                 DevTools, check for overlapping <br />
@@ -217,7 +216,7 @@
                 <p>Deadline</p>
                 <h4><b>21 March 2025</b></h4>
               </div>
-              <button
+              <button id="box6-btn" onclick="alert('Board updated Successfully')" 
                 class="text-white bg-[#2542f8] font-medium text-base py-3 px-5 rounded-lg cursor-pointer"
               >
                 Completed
@@ -226,21 +225,24 @@
           </div>
         </div>
       </section>
-      <section class="bg-white rounded-2xl w-[444px] text-center">
+      <section class="bg-white rounded-2xl w-[440px] text-center">
         <div class="border-b border-dashed p-6 mb-6">
           <div class="flex gap-4 mb-4 justify-center">
             <img src="assets/activity.png" alt="" />
             <p class="font-medium text-xl">Activity Log</p>
           </div>
-          <button
+          <button id="clear-btn" 
             class="text-white bg-[#2542f8] font-medium text-base py-3 px-5 rounded-lg cursor-pointer"
           >
             Clear History
           </button>
         </div>
-        <div></div>
+        <div id="activity-container">
+
+        </div>
       </section>
     </main>
     <script src="script/script.js"></script>
+    <script src="script/activity.js"></script>
   </body>
 </html>
