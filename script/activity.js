@@ -38,6 +38,10 @@ function disableButton(disButton){
      const newTaskNumber = convertedTaskNumber - 1;
      document.getElementById('task-number').innerText = newTaskNumber;
 
+     if(newTaskNumber === 0){
+        alert('congrats!!! You have completed all the current task');
+    }
+
      // increase task- completed number
      const allTasks = document.getElementById('tasks').innerText;
     const convertedTasks = parseInt(allTasks);
