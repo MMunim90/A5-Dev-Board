@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevBoard</title>
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+
+    <!-- poppins font setup -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- daisyUI CDN setup -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+      .font-poppins {
+        font-family: "Poppins", sans-serif;
+      }
+      table, th, td {
+        border: 3px solid black;
+        padding: 15px;
+      }
+      th {
+        background-color: #e2e8f0;
+      }
+      button:hover{
+        transform: scale(1.05);
+        transition: transform 0.2s;
+      }
+    </style>
+  </head>
+  <body class="font-poppins w-auto mx-auto bg-[#e2e8f0] pt-6 pb-6">
+    <header class="flex justify-between py-6 mx-36 bg-white p-6 rounded-2xl">
+        <div class="flex gap-3 items-center">
+          <img src="assets/logo.png" alt="DevBoard logo" />
+          <h1 class="text-4xl">Dev<b>Board</b></h1>
+        </div>
+        <button><a class="text-white bg-[#2542f8] font-medium text-base py-3 px-5 rounded-lg" href="index.html">Back to Desk</a></button>
+      </header>
+
+      <main class="mx-36">
+        <h1 class="text-4xl font-bold mt-4 text-center">Blogs</h1>
+        <div class="flex flex-col gap-10 mt-6">
+            <div class="bg-white p-6">
+                <h2 class="font-bold text-2xl mb-3 pb-2 border-b border-dashed">Question-1: What are the different ways to select an element in the DOM?</h2>
+                <br>
+                <p class="text-lg">There are 5 ways to select an element in the DOM. They are:-
+                    <br> <br><b>1.Using getElementById.</b> | Ex: const element = document.getElementById("idName");</p>
+                <br><b>2.Using getElementsByClassName.</b> | Ex: const elements = document.getElementsByClassName("className");</p>
+                <br><b>3.Using getElementsByTagName.</b> | Ex: const elements = document.getElementsByTagName("h1");</p>
+                <br><b>4.Using querySelector.</b> | Ex: const element = document.querySelector("#idName");</p>
+                <br><b>5.Using querySelectorAll.</b> | Ex: const elements = document.querySelectorAll(".className");</p>
+            </div>
+<br>
+            <div class="bg-white p-6">
+                <h2 class="font-bold text-2xl mb-3 pb-2 border-b border-dashed">Question-2: What is the difference between innerHTML, innerText, and textContent ?
+                </h2>
+                <br>
+                <p class="text-lg">
+                    <table>
+                        <tr>
+                            <th>innerHtml</th>
+                            <th>innerText</th>
+                            <th>textContents</th>
+                        </tr>
+                        <tr>
+                            <td><b>innerHtml</b> returns all text, <br> including html tags, that <br> is contained by an element.
+                            </td>
+                            <td><b>innerText</b> returns all text  that <br> is contained by an element.
+                            </td>
+                            <td><b>textContent</b> return full <br> text content of an element, <br> including hidden elements. </td>
+                        </tr>
+                        <tr>
+                            <td>It was not affected by CSS.</td>
+                            <td>It was affected by CSS.</td>
+                            <td>It was not affected by CSS.</td>
+                        </tr>
+                    </table>
+                </p>
+            </div>
+<br>
+            <div class="bg-white p-6">
+                <h2 class="font-bold text-2xl mb-3 pb-2 border-b border-dashed">Question-3: What is event delegation in the DOM?
+                </h2>
+                <br>
+                <p class="text-lg"><b>Event delegation</b> is a technique in JavaScript, where adding a <b>single event listener <br> to parent element</b> instead of adding <b>event listeners to multiple child elements.</b></p>
+            </div>
+<br>
+            <div class="bg-white p-6">
+                <h2 class="font-bold text-2xl mb-3 pb-2 border-b border-dashed">Question-4: What is event bubbling in the DOM?
+                </h2>
+                <br>
+                <p class="text-lg"><b>Event bubbling</b> in JavaScript is a mechanism <b> where an event triggered on a child element <br> propagates upward through its ancestors</b> in the DOM. It allows parent elements to respond <br> to events triggered by their child elements.</p>
+            </div>
+<br>
+            <div class="bg-white p-6">
+                <h2 class="font-bold text-2xl mb-3 pb-2 border-b border-dashed">Question-5: How do you create, add, and remove elements using JavaScript?</h2>
+                <br>
+                <p class="text-lg">
+                    <b>1. Create Elements using JavaScript:- </b><br>
+                    => To create an element using JavaScript, we use <b>.createElement("p")</b> <br> <b>Ex:</b> const paragraph = document.createElement("p");
+                    <br> <br>
+                    <b>2. Add Elements using JavaScript:- </b><br>
+                    => To add an element using JavaScript, we use <b>.appendChild()</b> <br> <b>Ex:</b>
+                    const element = document.getElementById("div1"); <br>
+                    element.appendChild(paragraph);
+                    <br><br>
+                    <b>3. Remove Elements using JavaScript:- </b><br>
+                    => To remove an element using JavaScript, we use <b>remove()</b> <br> <b>Ex:</b> document.getElementById("div1").remove();
+
+                </p>
+            </div>
+        </div>
+      </main>
+  </body>
+</html>
