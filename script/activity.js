@@ -26,6 +26,20 @@ getActivityByIDandButton('box5', 'box5-btn');
 getActivityByIDandButton('box6', 'box6-btn');
 
 
+// disable button
+function disableButton(disButton){
+    document.getElementById(disButton).addEventListener('click', function(event){
+        event.currentTarget.disabled = true;
+    });
+}
+
+disableButton('box1-btn');
+disableButton('box2-btn');
+disableButton('box3-btn');
+disableButton('box4-btn');
+disableButton('box5-btn');
+disableButton('box6-btn');
+
 
 // remove all activity
 document.getElementById('clear-btn').addEventListener('click', function(){
