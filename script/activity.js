@@ -30,6 +30,21 @@ getActivityByIDandButton('box6', 'box6-btn');
 function disableButton(disButton){
     document.getElementById(disButton).addEventListener('click', function(event){
         event.currentTarget.disabled = true;
+
+        // decrease task assigned number
+        const taskNumber = document.getElementById('task-number').innerText;
+    const convertedTaskNumber = parseInt(taskNumber);
+
+     const newTaskNumber = convertedTaskNumber - 1;
+     document.getElementById('task-number').innerText = newTaskNumber;
+
+     // increase task- completed number
+     const allTasks = document.getElementById('tasks').innerText;
+    const convertedTasks = parseInt(allTasks);
+
+     const newTasks = convertedTasks + 1;
+     document.getElementById('tasks').innerText = newTasks;
+
     });
 }
 
@@ -45,3 +60,5 @@ disableButton('box6-btn');
 document.getElementById('clear-btn').addEventListener('click', function(){
     document.getElementById('activity-container').innerHTML = '';
 });
+
+
